@@ -1,0 +1,574 @@
+{
+	"b-clothes1.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-clothes2.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-clothes3.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-clothes4.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-clothes5.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-clothes6.png": {
+		"width": 460,
+		"height": 600
+	},
+	"b-hair1.png": {
+		"width": 300,
+		"height": 372
+	},
+	"b-hair2.png": {
+		"width": 300,
+		"height": 372
+	},
+	"b-hair3.png": {
+		"width": 300,
+		"height": 372
+	},
+	"b-hair4.png": {
+		"width": 300,
+		"height": 372
+	},
+	"b-hair5.png": {
+		"width": 300,
+		"height": 372
+	},
+	"b-hair6.png": {
+		"width": 300,
+		"height": 372
+	},
+	"bg-clothes1.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-clothes2.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-clothes3.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-clothes4.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-clothes5.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-clothes6.png": {
+		"width": 340,
+		"height": 540
+	},
+	"bg-hair1.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg-hair2.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg-hair3.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg-hair4.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg-hair5.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg-hair6.png": {
+		"width": 124,
+		"height": 120
+	},
+	"bg1.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg2.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg3.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg4.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg5.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg6.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg7.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg8.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bg9.png": {
+		"width": 750,
+		"height": 1334
+	},
+	"bm1.png": {
+		"width": 300,
+		"height": 650
+	},
+	"bm2.png": {
+		"width": 300,
+		"height": 650
+	},
+	"bm3.png": {
+		"width": 300,
+		"height": 650
+	},
+	"bmm1.png": {
+		"width": 240,
+		"height": 650
+	},
+	"bmm2.png": {
+		"width": 240,
+		"height": 650
+	},
+	"bmm3.png": {
+		"width": 240,
+		"height": 650
+	},
+	"bride-face.png": {
+		"width": 134,
+		"height": 164
+	},
+	"bridegroom-face.png": {
+		"width": 130,
+		"height": 164
+	},
+	"btn-del.png": {
+		"width": 50,
+		"height": 50
+	},
+	"btn-generate.png": {
+		"width": 80,
+		"height": 80
+	},
+	"btn-resize.png": {
+		"width": 50,
+		"height": 50
+	},
+	"cf1.png": {
+		"width": 320,
+		"height": 530
+	},
+	"cf2.png": {
+		"width": 320,
+		"height": 530
+	},
+	"cf3.png": {
+		"width": 320,
+		"height": 530
+	},
+	"cm1.png": {
+		"width": 240,
+		"height": 600
+	},
+	"cm2.png": {
+		"width": 240,
+		"height": 600
+	},
+	"cm3.png": {
+		"width": 240,
+		"height": 600
+	},
+	"dec1.png": {
+		"width": 352,
+		"height": 323
+	},
+	"dec2.png": {
+		"width": 275,
+		"height": 454
+	},
+	"dec3.png": {
+		"width": 352,
+		"height": 460
+	},
+	"dec4.png": {
+		"width": 750,
+		"height": 900
+	},
+	"dec5.png": {
+		"width": 330,
+		"height": 250
+	},
+	"dec6.png": {
+		"width": 330,
+		"height": 410
+	},
+	"dec7.png": {
+		"width": 380,
+		"height": 430
+	},
+	"dec8.png": {
+		"width": 80,
+		"height": 267
+	},
+	"dec9.png": {
+		"width": 350,
+		"height": 480
+	},
+	"dec10.png": {
+		"width": 285,
+		"height": 430
+	},
+	"dec11.png": {
+		"width": 281,
+		"height": 420
+	},
+	"dec12.png": {
+		"width": 155,
+		"height": 200
+	},
+	"fn-desc.png": {
+		"width": 750,
+		"height": 244
+	},
+	"nav-arrow.png": {
+		"width": 60,
+		"height": 60
+	},
+	"nav-dec.png": {
+		"width": 60,
+		"height": 60
+	},
+	"nav-human.png": {
+		"width": 60,
+		"height": 60
+	},
+	"nav-pet.png": {
+		"width": 60,
+		"height": 60
+	},
+	"nav-place.png": {
+		"width": 60,
+		"height": 60
+	},
+	"pet1.png": {
+		"width": 197,
+		"height": 300
+	},
+	"pet2.png": {
+		"width": 200,
+		"height": 255
+	},
+	"pet3.png": {
+		"width": 300,
+		"height": 240
+	},
+	"pet4.png": {
+		"width": 300,
+		"height": 320
+	},
+	"pet5.png": {
+		"width": 229,
+		"height": 300
+	},
+	"pet6.png": {
+		"width": 270,
+		"height": 240
+	},
+	"thumb-b-clothes1(1).png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-clothes2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-clothes3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-clothes4.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-clothes5.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-clothes6.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair4.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair5.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-b-hair6.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes4.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes5.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-clothes6.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair4.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair5.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bg-hair6.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bm1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bm2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bm3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bmm1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bmm2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-bmm3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chf1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chf2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chf3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chm1.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chm2.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-chm3.png": {
+		"width": 80,
+		"height": 80
+	},
+	"thumb-d1.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d2.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d3.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d4.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d5.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d6.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d7.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d8.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d9.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d10.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d11.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-d12.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-hm1.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-hm2.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-hm3.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-hm4.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-hm5.png": {
+		"width": 151,
+		"height": 151
+	},
+	"thumb-hm6.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p1.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p2.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p3.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p4.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p5.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-p6.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s1.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s2.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s3.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s4.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s5.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s6.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s7.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s8.png": {
+		"width": 150,
+		"height": 150
+	},
+	"thumb-s9.png": {
+		"width": 150,
+		"height": 150
+	}
+}

@@ -1,0 +1,7 @@
+<div class="card_root_layout" onclick="mainRouter">
+    <image src="/common/bg2.png" class="card_bg"></image>
+    <div class="card-main">
+        <text class="card-title">梦中的婚礼</text>
+        <text class="card-subtitle">以爱之名，以余生为期。</text>
+    </div>
+</div>

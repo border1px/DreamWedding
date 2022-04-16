@@ -1,0 +1,372 @@
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.opacity-0{
+    opacity: 0;
+}
+.opacity-1{
+    opacity: 1;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8EADD;
+}
+.app-title{
+
+}
+.header-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-btn{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flow{
+/*    background-color: pink;*/
+}
+.btn-flow{
+    width: 30px;
+    height: 30px;
+}
+.btn-more{
+    width: 30px;
+    height: 30px;
+}
+.title {
+    font-size: 40px;
+    color: #000000;
+    opacity: 0.9;
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*主菜单*/
+.tabs {
+    width: 100%;
+    position: fixed;
+    height: 260px;
+    bottom: 0;
+}
+.tabcontent {
+    width: 100%;
+    height: 100%;
+}
+
+.tab-bar {
+    height: 60px;
+    background-color: #F2F2F2;
+}
+.tab-icon {
+    width: 35px;
+    height: 35px;
+}
+.tab-icon-dec{
+    width: 32px;
+    height: 32px;
+}
+.tab-icon-pet{
+    width: 34px;
+    height: 34px;
+}
+.tab-icon-camera{
+    width: 32px;
+    height: 32px;
+}
+.item-content{
+    columns: 3;
+    align-items: center;
+    background-color: #FFF;
+}
+.list-item{
+    width: 115px;
+    height: 110px;
+    margin-bottom: 10px;
+}
+.btnActionSheet{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.show-sheet{
+    bottom: 0;
+}
+/*.hide-sheet{*/
+/*    bottom: 0;*/
+/*}*/
+/*.show-sheet {*/
+/*    animation-name: ShowSheet;*/
+/*    animation-fill-mod: forwards;*/
+/*    animation-duration: 300ms;*/
+/*}*/
+/*.hide-sheet {*/
+/*    animation-name: HideSheet;*/
+/*    animation-fill-mod: forwards;*/
+/*    animation-duration: 300ms;*/
+/*}*/
+/*@keyframes ShowSheet {*/
+/*    from {*/
+/*        bottom: -185px;*/
+/*    }*/
+/*    to {*/
+/*        bottom: 0;*/
+/*    }*/
+/*}*/
+/*@keyframes HideSheet {*/
+/*    from {*/
+/*        bottom: 0;*/
+/*    }*/
+/*    to {*/
+/*        bottom: -185px;*/
+/*    }*/
+/*}*/
+
+/*二级子菜单*/
+.tabs-submenu{
+    position: fixed;
+    right: 5px;
+    top: 70px;
+    height: 55%;
+    width: 50px;
+}
+.tabs-submenu-max{
+    position: fixed;
+    right: 5px;
+    top: 70px;
+    height: 80%;
+    width: 50px;
+}
+.submenu-list-item{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+
+/*设备选择modal*/
+.btn-dialog{
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.text-button{
+    background-color: #5959f1;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.select-device-dialog {
+    width: 90%;
+    height: 33%;
+}
+
+.select-device-wrapper {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+}
+
+.select-device-title {
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.select-device-list {
+    width: 100%;
+    height: 60%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.select-device-item {
+    width: 100%;
+    height: 33%;
+}
+
+.select-device-item-left {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+/* =============================== 客户端 =============================== */
+.client{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden ;
+    position: fixed;
+    top:51px;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+}
+.client-list-item{
+    width: 115px;
+    height: 200px;
+    margin-bottom: 6px;
+}
+
+
+/* =============================== splash =============================== */
+.hide{
+    opacity: 0;
+    transition: 1s;
+}
+.show{
+    transition: 1s;
+    opacity: 1;
+}
+.splash{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8EADD;
+}
+.wrapper {
+    width: 300px;
+    height: 115px;
+    overflow: hidden ;
+}
+.main{
+    height: 100px;
+    width: 100%;
+}
+.carpet{
+    position: absolute;
+    left:0;
+    bottom: 0;
+/*    transform: translate(-236, 0);*/
+    width: 300px;
+    height: 15px;
+    background-image: url(common/images/carpet.png);
+    background-size: 100% 100%;
+}
+
+.man {
+    width: 64px;
+    height: 100px;
+    background-image: url(common/images/run.png);
+    background-size: 500% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    animation: 500ms manpao infinite;
+}
+
+.man2{
+    width: 70px;
+    height: 83px;
+    background-image: url(common/images/knock-human.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+}
+
+.woman {
+    width: 64px;
+    height: 100px;
+    background-image: url(common/images/girl.png);
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes manpao {
+    0% {
+        background-position: 0 0;
+    }
+
+    19% {
+        background-position: 0 0;
+    }
+
+    20% {
+        background-position: -64px 0;
+    }
+
+    39% {
+        background-position: -64px 0;
+    }
+
+    40% {
+        background-position: -128px 0;
+    }
+
+    59% {
+        background-position: -128px 0;
+    }
+
+    60% {
+        background-position: -192px 0;
+    }
+
+    79% {
+        background-position: -192px 0;
+    }
+
+    80% {
+        background-position: -256px 0;
+    }
+
+    99% {
+        background-position: -256px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

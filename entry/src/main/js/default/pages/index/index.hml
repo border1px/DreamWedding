@@ -1,0 +1,150 @@
+<element name='loading' src='../../components/loading/index.hml'></element>
+
+<div class="container">
+    <div class="splash" if="{{splashVisible}}">
+        <div class="wrapper" >
+            <div class="main">
+                <div class="man {{scene1Visible ? 'show' : 'hide'}}" id="man"></div>
+                <div class="man2 {{scene3Visible ? 'show' : 'hide'}}" id="man2"></div>
+                <div class="woman {{scene2Visible ? 'show' : 'hide'}}" id="woman"></div>
+            </div>
+            <div class="carpet" id="carpet"></div>
+        </div>
+    </div>
+
+    <loading if="{{loading}}" text="生成图片..."></loading>
+    <div class="header">
+        <div>
+            <text class="app-title">梦中的婚礼  </text>
+            <text if="{{!isMaster}}">（扩展面板）</text>
+        </div>
+        <div class="header-btns" >
+            <div class="header-btn flow" onclick="startFA">
+                <image src="common/images/btn-flow.png" if="{{isMaster}}" class="btn-flow" ></image>
+            </div>
+            <div>
+                <image src="common/images/btn-more.png" class="btn-more" ></image>
+            </div>
+        </div>
+    </div>
+    <div if="{{isMaster}}">
+        <canvas ref="canvas" id="canvas" class="canvas" ontouchstart="onTouchStart" ontouchmove="onTouchMove" ontouchend="onTouchEnd"></canvas>
+    <!-- 主菜单 -->
+        <tabs id="tabs" class="tabs {{sheetVisible ? 'show-sheet' : 'hide-sheet'}} {{ splashVisible ? 'opacity-0' : 'opacity-1' }}"   index="0" vertical="false" >
+            <tab-bar class="tab-bar" mode="fixed">
+                <image class="tab-icon" src="../../common/images/img/nav-place.png"/>
+                <image class="tab-icon" src="../../common/images/img/nav-human.png" />
+                <image class="tab-icon tab-icon-dec" src="../../common/images/img/nav-dec.png" />
+                <image class="tab-icon tab-icon-pet" src="../../common/images/img/nav-pet.png" />
+                <image class="tab-icon tab-icon-camera" src="../../common/images/camera.png" @click="handleCamera"/>
+                <image class="tab-icon" src="../../common/images/btn-shrink.png"  @click="handleTriggerTabVisbile"/>
+            </tab-bar>
+            <tab-content class="tabcontent" scrollable="true">
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu1}}" @click="handleChangeBg(item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu2}}" @click="createItem(item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu3}}" @click="createItem(item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu4}}" @click="createItem(item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+            </tab-content>
+        </tabs>
+
+    <!-- 二级菜单 -->
+        <tabs class = " {{sheetVisible ? 'tabs-submenu' : 'tabs-submenu-max'}}" index="{{submenuIndex}}" vertical="true">
+            <tab-content class="tabcontent" scrollable="false">
+                <list></list>
+                <list class="sidebar-boy submenu-list" >
+                    <list-item for="{{(index, item) in submenu.boy}}" @click="handleChangeItem(item.name, 'boy')" class="submenu-list-item"  style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+                <list class="sidebar-boy2 submenu-list" >
+                    <list-item for="{{(index, item) in submenu.boy2}}" @click="handleChangeItem(item.name, 'boy2')" class="submenu-list-item"  style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+                <list class="sidebar-boy3 submenu-list" >
+                    <list-item for="{{(index, item) in submenu.boy3}}" @click="handleChangeItem(item.name, 'boy3')" class="submenu-list-item"  style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+                <list class="sidebar-girl submenu-list" >
+                    <list-item for="{{(index, item) in submenu.girl}}" @click="handleChangeItem(item.name, 'girl')" class="submenu-list-item"  style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+                <list class="sidebar-girl2 submenu-list">
+                    <list-item for="{{(index, item) in submenu.girl2}}" @click="handleChangeItem(item.name, 'girl2')" class="submenu-list-item" style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+                <list class="sidebar-girl3 submenu-list" >
+                    <list-item for="{{(index, item) in submenu.girl3}}" @click="handleChangeItem(item.name, 'girl3')" class="submenu-list-item" style="column-span: {{cspan}};">
+                        <image class="submenu-item"  src="../../common/images/img/{{ item.name }}"/>
+                    </list-item>
+                </list>
+            </tab-content>
+        </tabs>
+
+        <dialog id="showDialog" class="select-device-dialog">
+            <div class="select-device-wrapper">
+                <text class="select-device-title">选择设备</text>
+                <list class="select-device-list">
+                    <list-item class="select-device-item" for="{{ deviceList }}" id="list">
+                        <text class="select-device-item-left"
+                              onclick="selectDevice({{$item.networkId}})" >{{ $item.deviceName }}
+                        </text>
+                    </list-item>
+                </list>
+            </div>
+        </dialog>
+    </div>
+
+    <div if="{{!isMaster}}" class="client">
+        <tabs class="client-tabs  index="0" vertical="false" >
+            <tab-bar class="tab-bar" mode="fixed">
+                <image class="tab-icon" src="../../common/images/img/nav-place.png"/>
+                <image class="tab-icon" src="../../common/images/img/nav-human.png" />
+                <image class="tab-icon" src="../../common/images/img/nav-dec.png" />
+                <image class="tab-icon" src="../../common/images/img/nav-pet.png" />
+            </tab-bar>
+            <tab-content class="tabcontent" scrollable="true">
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu1}}" @click="doMaster('bg', item.name)" class="client-list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.oname }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu2}}" @click="doMaster('item',item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu3}}" @click="doMaster('item', item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+                <list class="item-content" >
+                    <list-item for="{{(index, item) in mainmenu.menu4}}" @click="doMaster('item', item.name)" class="list-item" >
+                        <image class="menu-item"  src="../../common/images/img/{{ item.name }}" />
+                    </list-item>
+                </list>
+            </tab-content>
+        </tabs>
+    </div>
+</div>
+

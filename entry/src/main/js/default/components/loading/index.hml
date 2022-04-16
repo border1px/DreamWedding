@@ -1,0 +1,6 @@
+<div class="loading-container">
+    <div class="loading-wrap">
+        <image src="./loading.png" class="loading-icon"></image>
+        <text class="loading-text">{{text}}</text>
+    </div>
+</div>
