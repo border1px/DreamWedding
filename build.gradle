@@ -13,6 +13,15 @@ ohos {
             profile file('/Users/border1px/.ohos/config/hag/auto_debug_hag_dreamwedding_260086000040204141.p7b')
             certpath file('/Users/border1px/.ohos/config/hag/auto_debug_hag_dreamwedding_260086000040204141.cer')
         }
+        release {
+            storeFile file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release.p12')
+            storePassword '0000001F9E64AD4C965C8F55EB1D42B4053493EE89B0B30365FC689461213F18D5FB47BBBA832BE15CCE7FB2139FB0'
+            keyAlias = 'release'
+            keyPassword '0000001F0C509243E97FDF5445DF23D9398BA6964E256221499CCA7C5D1120809EFA18622C754799593CE5A475AEFA'
+            signAlg = 'SHA256withECDSA'
+            profile file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release_dreamweddingrelease.p7b')
+            certpath file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release_dreamweddingrelease.cer')
+        }
     }
     compileSdkVersion 7
 }

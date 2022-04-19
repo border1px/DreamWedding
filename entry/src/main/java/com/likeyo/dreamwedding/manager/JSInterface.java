@@ -26,6 +26,11 @@ public class JSInterface implements LocalParticleAbility {
         mainAbility.isAllowTriggerAsync(type_name);
     }
 
+    public void startHWShare(final Callback callback) {
+        mainAbility.setCallback(callback);
+        mainAbility.startHWShare();
+    }
+
     /**
      * get BundleName
      *

@@ -76,7 +76,7 @@
             "scheduledUpdateTime": "10:30",
             "defaultDimension": "2*2",
             "name": "widget",
-            "description": "This is a service widget",
+            "description": "定制你梦中的婚礼现场",
             "colorMode": "auto",
             "type": "JS",
             "supportDimensions": [

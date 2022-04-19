@@ -1,0 +1,3 @@
+interface com.huawei.hwshare.third.IHwShareCallback {
+    [oneway] void notifyState([in] int state);
+}

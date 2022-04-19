@@ -1,3 +1,4 @@
+import ShapeImage from '../../common/engine/core/shapes/Image.js';
 import device from '@system.device';
 import prompt from '@system.prompt';
 import Application from '../../common/engine/core/Application'
@@ -49,6 +50,16 @@ export default {
       this.splashVisible = false;
     }, 2000);
   },
+  initBg() {
+    // 初始化背景
+    let ctx = this.$refs.canvas.getContext('2d')
+    let client = this.$refs.canvas.getBoundingClientRect()
+    var img = new Image();
+    img.src = 'common/images/img/bg1.png';
+    img.onload = function() {
+      ctx.drawImage(img, 0, 0, client.width, client.height);
+    }
+  },
   onReady() {
     // splash
     var options = {duration: 800, easing: 'linear', fill: 'forwards'};
@@ -56,6 +67,9 @@ export default {
       {transform: {translateX: '0'}},
       {transform: {translateX: '180'}}
     ];
+
+    // 初始化背景
+//    this.initBg()
 
     setTimeout(() => {
       let animation = this.$element('man').animate(frames, options);
@@ -74,9 +88,9 @@ export default {
       this.animationHideSheet = this.$element('tabs').animate(framesPromptHideList, optionsPromptList);
 
       // 启动主程序
-      //      this._app = new Application(this.$refs.canvas)
-      //      this._app.rootContainer.sprite.touchEvent = this.touchEventHandler.bind(this)
-      //      this._app.start()
+      this._app = new Application(this.$refs.canvas)
+      this._app.rootContainer.sprite.touchEvent = this.touchEventHandler.bind(this)
+      this._app.start()
     }, 500)
     setTimeout(() => {this.scene2Visible = true}, 500)
   },
@@ -88,6 +102,12 @@ export default {
   },
   onTouchEnd(evt) {
     this._app.handleEvent(evt)
+  },
+  startHWShare() {
+    this.javaInterface = createLocalParticleAbility(JS_PATH);
+    this.javaInterface.startHWShare(result => {
+
+    })
   },
   /**
    * 启动FA

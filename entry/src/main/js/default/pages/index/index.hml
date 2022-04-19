@@ -22,8 +22,8 @@
             <div class="header-btn flow" onclick="startFA">
                 <image src="common/images/btn-flow.png" if="{{isMaster}}" class="btn-flow" ></image>
             </div>
-            <div>
-                <image src="common/images/btn-more.png" class="btn-more" ></image>
+            <div class="header-btn share" @click="startHWShare">
+                <image src="common/images/btn-share.png" class="btn-more" ></image>
             </div>
         </div>
     </div>

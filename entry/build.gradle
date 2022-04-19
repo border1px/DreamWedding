@@ -2,6 +2,17 @@ apply plugin: 'com.huawei.ohos.hap'
 apply plugin: 'com.huawei.ohos.decctest'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
 ohos {
+    signingConfigs {
+        release {
+            storeFile file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release.p12')
+            storePassword '0000001FE805254D4304A57BFE84740F820370B3F207D3359F0FF36A61B1E79DCD508B92F7027AD051F27579709AC0'
+            keyAlias = 'release'
+            keyPassword '0000001F810839FC8320644759643119141599DFB2998A3EFD1A3AD00B5372FDB4FBECA2AF2BE908E5D9DF36B9A6DC'
+            signAlg = 'SHA256withECDSA'
+            profile file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release_dreamweddingrelease.p7b')
+            certpath file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release_dreamweddingrelease.cer')
+        }
+    }
     compileSdkVersion 7
     defaultConfig {
         compatibleSdkVersion 6
@@ -23,5 +34,5 @@ dependencies {
     ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.200'
 }
 decc {
-    supportType = ['html','xml']
+    supportType = ['html', 'xml']
 }
