@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <loading if="{{loading}}" text="生成图片..."></loading>
+    <loading if="{{loading}}" text="生成图片..." ></loading>
     <div class="header">
         <div>
             <text class="app-title">梦中的婚礼  </text>
@@ -29,6 +29,7 @@
     </div>
     <div if="{{isMaster}}">
         <canvas ref="canvas" id="canvas" class="canvas" ontouchstart="onTouchStart" ontouchmove="onTouchMove" ontouchend="onTouchEnd"></canvas>
+<!--        <image src="common/images/img/bg1.png" class="bgImage"></image>-->
     <!-- 主菜单 -->
         <tabs id="tabs" class="tabs {{sheetVisible ? 'show-sheet' : 'hide-sheet'}} {{ splashVisible ? 'opacity-0' : 'opacity-1' }}"   index="0" vertical="false" >
             <tab-bar class="tab-bar" mode="fixed">

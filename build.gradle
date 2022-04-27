@@ -5,13 +5,13 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     signingConfigs {
         debug {
-            storeFile file('/Users/border1px/.ohos/config/hag/auto_debug_hag_dreamwedding_260086000040204141.p12')
-            storePassword '0000001854428EF85390BCF0FCB73A08F3ECE4CE6B88C2C492FC31FBE6FE3479F87EF848CF39B523'
+            storeFile file('/Users/border1px/.ohos/config/auto_debug_hmservice_260086000040204141.p12')
+            storePassword '00000018C7A87BBD1D808B786034E2AD7255A091A30EEEAC7657456F5D85F95EA53C90D7BC74E714'
             keyAlias = 'debugKey'
-            keyPassword '000000182EE3C1E1CFA7BF688DCD3AA96351268D313849941DB107BA20592C3A2D86C5FD05A5B869'
+            keyPassword '00000018EB24052F244658CE136BEB1E7FAED9A096358D18CD1B0C7D8DCD124C13D985492CFAD748'
             signAlg = 'SHA256withECDSA'
-            profile file('/Users/border1px/.ohos/config/hag/auto_debug_hag_dreamwedding_260086000040204141.p7b')
-            certpath file('/Users/border1px/.ohos/config/hag/auto_debug_hag_dreamwedding_260086000040204141.cer')
+            profile file('/Users/border1px/.ohos/config/auto_debug_hmservice_260086000040204141.p7b')
+            certpath file('/Users/border1px/.ohos/config/auto_debug_hmservice_260086000040204141.cer')
         }
         release {
             storeFile file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release.p12')

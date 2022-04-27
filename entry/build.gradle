@@ -13,7 +13,7 @@ ohos {
             certpath file('/Users/border1px/Documents/Harmony/DreamWeddingAtomic/release_dreamweddingrelease.cer')
         }
     }
-    compileSdkVersion 7
+    compileSdkVersion 6
     defaultConfig {
         compatibleSdkVersion 6
     }

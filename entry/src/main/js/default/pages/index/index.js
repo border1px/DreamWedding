@@ -50,16 +50,6 @@ export default {
       this.splashVisible = false;
     }, 2000);
   },
-  initBg() {
-    // 初始化背景
-    let ctx = this.$refs.canvas.getContext('2d')
-    let client = this.$refs.canvas.getBoundingClientRect()
-    var img = new Image();
-    img.src = 'common/images/img/bg1.png';
-    img.onload = function() {
-      ctx.drawImage(img, 0, 0, client.width, client.height);
-    }
-  },
   onReady() {
     // splash
     var options = {duration: 800, easing: 'linear', fill: 'forwards'};
@@ -68,9 +58,6 @@ export default {
       {transform: {translateX: '180'}}
     ];
 
-    // 初始化背景
-//    this.initBg()
-
     setTimeout(() => {
       let animation = this.$element('man').animate(frames, options);
       animation.play()
@@ -78,6 +65,8 @@ export default {
         this.scene1Visible = false
         this.scene3Visible = true
       };
+
+      this.scene2Visible = true
 
       // 初始化隐藏tab动画
       var optionsPromptList = { duration: 300, easing: 'friction', delay: 0, fill: 'forwards', iterations: 1 };
@@ -92,7 +81,6 @@ export default {
       this._app.rootContainer.sprite.touchEvent = this.touchEventHandler.bind(this)
       this._app.start()
     }, 500)
-    setTimeout(() => {this.scene2Visible = true}, 500)
   },
   onTouchStart(evt) {
     this._app.handleEvent(evt)
@@ -213,7 +201,6 @@ export default {
   onNewRequest() {
     let type = this.type_name.split(':')[0]
     let name = this.type_name.split(':')[1]
-
     if (type === 'bg') {
       this.handleChangeBg(name)
     } else {
@@ -221,10 +208,10 @@ export default {
     }
   },
   handleCamera() {
-    //    prompt.showToast({
-    //      message: '正在保存图片...',
-    //      duration: 3000
-    //    })
+    prompt.showToast({
+      message: '正在保存图片...',
+      duration: 3000
+    })
 
     this.loading = true
     setTimeout(() => {

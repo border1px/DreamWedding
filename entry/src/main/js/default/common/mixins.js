@@ -655,6 +655,8 @@ export function handleChoiceContainer() {
 
 export function handleClearAllSelected() {
   this._hittedSprite = null
+  this.submenuIndex = 0
+
   if (!this._app.rootContainer) return;
   if (!this._app.rootContainer.children) return;
 
@@ -822,6 +824,8 @@ export function changeItem(name) {
     this.submenuIndex = 2 + 1 // 男童
   } else if (name === 'thumb-hm6.png' || (this._hittedSprite && this._hittedSprite.name === 'girl3')) {
     this.submenuIndex = 5 + 1 // 女童
+  } else {
+    this.submenuIndex = 0
   }
 }
 
@@ -852,12 +856,13 @@ export function createItem(name) {
     this.createElement(group[0].oname, group[0])
   } else {
     this.createElement(name, SPRITE_MAP[name])
+    this.submenuIndex = 0
   }
   this.changeItem(name)
 }
 
 export function handleTriggerTabVisbile(e) {
-  this.handleClearAllSelected()
+//  this.handleClearAllSelected()
   if (this.sheetVisible) {
     this.animationHideSheet.play()
   } else {

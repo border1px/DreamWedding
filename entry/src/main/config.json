@@ -40,7 +40,7 @@
       "deliveryWithInstall": true,
       "moduleName": "entry",
       "moduleType": "entry",
-      "installationFree": true
+      "installationFree": false
     },
     "abilities": [
       {
